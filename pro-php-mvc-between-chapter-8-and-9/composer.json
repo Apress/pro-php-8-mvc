@@ -1,0 +1,24 @@
+{
+  "name": "whoosh/website",
+  "description": "A website that sells Whoosh rockets",
+  "scripts": {
+    "serve": "php -S 127.0.0.1:8000 -t public"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app",
+      "Framework\\": "framework"
+    },
+    "files": [
+      "framework/helpers.php"
+    ]
+  },
+  "config": {
+    "process-timeout": 0
+  },
+  "require": {
+    "filp/whoops": "^2.1",
+    "vlucas/phpdotenv": "^5.2",
+    "symfony/console": "^5.1"
+  }
+}
